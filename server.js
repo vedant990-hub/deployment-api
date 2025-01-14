@@ -9,7 +9,7 @@ app.get('/', (_req, res) => {
 
 app.post('/api/data', (req, res) => {
     const {name,age} = req.body;
-    res.json({message:'Hello ${name} your age is ${age}'})
+    res.json({message:`Hello ${name} your age is ${age}`})
 });
 
 app.listen(PORT, ()=>{
